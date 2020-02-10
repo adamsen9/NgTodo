@@ -51,7 +51,7 @@ export class SidenavComponent implements OnInit {
       holdingDrawerPosition: null,
       direction: '',
       endTrue: true,
-      maxWidth: 270,
+      maxWidth: 256,
       speed: 0.2,
       animation: 'ease-out',
       topBarHeight: 56,

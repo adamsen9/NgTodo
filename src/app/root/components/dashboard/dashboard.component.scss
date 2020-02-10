@@ -21,9 +21,9 @@
 }
 
 .content-wrapper {
-  min-height: 100vh;
-  height: auto;
-  padding-top: 52px !important;
+  max-height: 100vh;
+  height: calc(100vh - 56px);
+  padding-top: 56px !important;
   padding-bottom: 2.5rem;
 
   background-color: white;

@@ -18,7 +18,7 @@
   background: none;
   background-color: white;
   width: 100vw;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 #event-burger {
@@ -38,8 +38,8 @@
   display: grid;
   margin: 0;
   width: 100%;
-  grid-template-columns: 52px auto 52px;
-  grid-template-rows: 52px;
+  grid-template-columns: 56px auto 56px;
+  grid-template-rows: 56px;
   grid-template-areas: "burger middle home";
 
   .burger {
