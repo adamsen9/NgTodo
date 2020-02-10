@@ -5,9 +5,10 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { RootRoutingModule } from './root-routing.module';
 import { TopnavComponent } from './components/topnav/topnav.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  imports: [CommonModule, RootRoutingModule, SharedModule],
+  imports: [CommonModule, RootRoutingModule, SharedModule, MatIconModule],
   declarations: [DashboardComponent, SidenavComponent, TopnavComponent]
 })
 export class RootModule { }

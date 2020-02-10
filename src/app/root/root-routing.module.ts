@@ -5,12 +5,14 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 const routes: Routes = [
   {
     path: '',
-    component: DashboardComponent
+    component: DashboardComponent,
+    children: [
+      {
+        path: 'todos',
+        loadChildren: () => import('../todos/todos.module').then(m => m.TodosModule),
+      }
+    ]
   },
-  {
-    path: 'todos',
-    loadChildren: () => import('../todos/todos.module').then(m => m.TodosModule),
-  }
 ];
 
 @NgModule({

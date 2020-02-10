@@ -1,0 +1,33 @@
+:host {
+  position: absolute;
+  pointer-events: none;
+}
+
+aside {
+  pointer-events: all;
+  z-index: 998;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white;
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 270px;
+  transition: all 0.15s ease-in;
+
+  .aside-catcher {
+    height: 100%;
+    width: 50px;
+  }
+}
+
+.sidepanel-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1000;
+}

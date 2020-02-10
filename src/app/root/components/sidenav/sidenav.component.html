@@ -1,3 +1,17 @@
-<p>sidenav works!</p>
+<!-- <p>sidenav {{ enabled ? "active" : "inactive" }}!</p> -->
+
+<aside id="drawer" class="menu" class="sidenav" ngClass="{active: enabled}">
+  <div class="sidepanel-content">
+    <a
+    routerLinkActive="active-link"
+    [routerLink]="['/todos']"
+    (click)="elementClicked()"
+  >
+    <p>
+      Todo manager
+    </p>
+  </a>
 
 
+  </div>
+</aside>

@@ -1,1 +1,30 @@
-<p>topnav works!</p>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-container">
+    <div class="burger" (click)="menuClicked()">
+      <mat-icon>menu</mat-icon>
+    </div>
+    <div class="middle">
+      <!-- <span [ngSwitch]="titleType$ | async">
+        <div *ngSwitchCase="'text'">
+          <p class="navbar-title">{{ title$ | async }}</p>
+        </div>
+        <div *ngSwitchCase="'image'">
+          <img
+            class="sema-connect-logo"
+            [src]="title$ | async"
+            alt="Sema connect logo"
+          />
+        </div>
+        <p *ngSwitchDefault></p>
+      </span> -->
+    </div>
+    <div class="home" (click)="homeClicked()">
+      <mat-icon>home</mat-icon>
+      <!-- <div class="item">
+        <a>
+          Home
+        </a>
+      </div> -->
+    </div>
+  </div>
+</nav>

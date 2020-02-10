@@ -1,7 +1,13 @@
-<app-sidenav></app-sidenav>
+<app-topnav
+(menuClickedEvent)="sideNav.show()"
+(homeClickedEvent)="homeClicked($event)"
+></app-topnav
+  >
+<div id="swipe-stripe"></div>
+<div id="drawer-dimm"></div>
 
-<app-topnav></app-topnav>
+<app-sidenav #sideNav [enabled]="sidenavStatus"></app-sidenav>
 
-<router-outlet></router-outlet>
-
-<p>dashboard works! omegalul</p>
+<div class="content-wrapper">
+  <router-outlet></router-outlet>
+</div>
