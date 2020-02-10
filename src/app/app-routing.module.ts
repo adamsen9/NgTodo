@@ -3,9 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'test',
+    path: '',
     // component: DashboardComponent
-    loadChildren: () => import('./todos/todos.module').then(m => m.TodosModule),
+    loadChildren: () => import('./root/root.module').then(m => m.RootModule),
   },
 ];
 
