@@ -10,6 +10,10 @@ const routes: Routes = [
       {
         path: 'todos',
         loadChildren: () => import('../todos/todos.module').then(m => m.TodosModule),
+      },
+      {
+        path: 'weather',
+        loadChildren: () => import('../weather/weather.module').then(m => m.WeatherModule),
       }
     ]
   },
