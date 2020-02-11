@@ -1,0 +1,32 @@
+a {
+  .sidenav-item {
+    height: 48px;
+    display: grid;
+    grid-template-columns: 16px 24px 32px 184px;
+
+    // padding: 16px 0 16px;
+
+    .sidenav-item-image {
+      grid-column: 2;
+      display: flex;
+      align-items: center;
+    }
+    .sidenav-item-text {
+      grid-column: 4;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}

@@ -1,6 +1,9 @@
 <!-- <p>sidenav {{ enabled ? "active" : "inactive" }}!</p> -->
 
 <aside id="drawer" class="menu" class="sidenav" ngClass="{active: enabled}">
+  <app-sidenav-item (itemClickedEvent)="elementClicked()"></app-sidenav-item>
+
+  <!--
   <div class="sidepanel-content">
     <a
     routerLinkActive="active-link"
@@ -13,5 +16,5 @@
   </a>
 
 
-  </div>
+  </div> -->
 </aside>

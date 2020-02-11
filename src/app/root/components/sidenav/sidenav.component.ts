@@ -70,7 +70,7 @@ export class SidenavComponent implements OnInit {
       drawer.style.webkitTransform = 'translate(0,0)' + 'translateZ(0)';
       drawer.style.msTransform = drawer.style.MozTransform = drawer.style.OTransform =
         'translateX(0)';
-      drawer.style.boxShadow = '0 0 10px rgba(0,0,0,0.4)';
+      drawer.style.boxShadow = '0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.20)';
 
       drawerDimm.style.transition =
         'all ' + nDrawer.speed + 's ' + nDrawer.animation;
@@ -125,7 +125,7 @@ export class SidenavComponent implements OnInit {
         'translate(' + pos + 'px,0)' + 'translateZ(0)';
       drawer.style.msTransform = drawer.style.MozTransform = drawer.style.OTransform =
         'translateX(' + pos + 'px)';
-      drawer.style.boxShadow = '0 0 10px rgba(0,0,0,0.4)';
+      drawer.style.boxShadow = '0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.20)';
       // if this is final touch (mouse move) event
       // show or hide the drawer (pannig left = open, right = close)
       // and clean our temp values
