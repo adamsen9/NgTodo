@@ -1,7 +1,7 @@
 {
   "name": "NgTodo",
   "short_name": "NgTodo",
-  "theme_color": "#9a0007",
+  "theme_color": "#aa0008",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",

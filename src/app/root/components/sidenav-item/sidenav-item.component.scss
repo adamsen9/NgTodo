@@ -1,9 +1,8 @@
 a {
   .sidenav-item {
-    height: 42px;
+    height: 48px;
     display: grid;
-    grid-template-columns: 6px 24px 32px 174px;
-    margin: 3px 10px 3px 10px;
+    grid-template-columns: 16px 24px 32px 184px;
 
     .sidenav-item-image {
       grid-column: 2;
@@ -25,9 +24,7 @@ a {
 
   &.active-link {
     .sidenav-item {
-      background-color: #ffcdd2;
-      color: #9a0007;
-      border-radius: 5px;
+      background-color: #f0f0f0;
     }
   }
 }
